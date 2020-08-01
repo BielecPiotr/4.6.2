@@ -4,27 +4,21 @@
 
 body { margin: 0; font-size: 16px; line-height: 1.7; font-family: "Inconsolata", monospace; color: #000000; }
 
-.splash { background: #ffffff; min-height: 500px; display: -ms-flexbox; display: flex; }
+.splash { background-image: url(images/header.jpg); min-height: 500px; display: -ms-flexbox; display: flex; }
 
 .container { max-width: 1140px; padding: 0 20px; margin: 0 auto; }
 
 section { padding: 96px 0; }
 
-.title { font-size: 48px; margin: 0 0 72px 0; color: #2c2c54; }
+.title { font-size: 48px; margin: 0 0 72px 0; color: #5e5e5e; }
 
-.subtitle { font-size: 24px; margin: 0 0 12px 0; color: #2c2c54; }
+.subtitle { font-size: 24px; margin: 0 0 12px 0; color: #5e5e5e; }
 
 .wrapper { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; justify-content: space-between; }
 
-.btn { display: inline-block; min-width: 160px; margin: 24px auto 0 auto; padding: 16px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; font-size: 16px; text-align: center; text-decoration: none; cursor: pointer; border: 2px solid; transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; -o-transition: all 1s; background-position: 100% 0; background-size: 300%; }
+.btn { display: inline-block; min-width: 160px; margin: 24px auto 0 auto; padding: 16px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; font-size: 16px; text-align: center; text-decoration: none; cursor: pointer; transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; -o-transition: all 1s; background-position: 100% 0; background-size: 300%; color: #ffffff; background-color: #ffd904; }
 
-.btn:hover { background-position: 0 100%; color: #000000; }
-
-.btn-one { border-color: #000000; color: #000000; background-image: linear-gradient(90deg, #000000 50%, transparent 50%); }
-
-.btn-one:hover { color: #ffffff; }
-
-p { font-family: "Inconsolata", monospace; color: #2c2c54; font-weight: lighter; font-size: 14px; }
+p { font-family: "Inconsolata", monospace; color: #5e5e5e; font-weight: lighter; font-size: 14px; }
 
 /* navigation */
 .navigation { background: #ffffff; padding: 12px 0; }
@@ -37,7 +31,7 @@ p { font-family: "Inconsolata", monospace; color: #2c2c54; font-weight: lighter;
 
 .navigation a:hover { color: #33d9b2; }
 
-.navigation ul ul li { display: block; margin: 0 5px 12px 5px; color: #2c2c54; }
+.navigation ul ul li { display: block; margin: 0 5px 12px 5px; color: #5e5e5e; }
 
 .navigation li ul { display: none; left: 50%; transform: translateX(-50%); padding-top: 12px; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
 
@@ -65,7 +59,7 @@ p { font-family: "Inconsolata", monospace; color: #2c2c54; font-weight: lighter;
 
 .btn-two { border-color: #33d9b2; color: #33d9b2; background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%); }
 
-.btn-three { border-color: #ff5252; color: #ff5252; background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%); }
+.btn-three { border-color: #ffd904; color: #ffd904; background-image: linear-gradient(90deg, #ffd904 50%, transparent 50%); }
 
 .btn-four { border-color: #ffffff; color: #ffffff; background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%); }
 
@@ -88,7 +82,7 @@ p { font-family: "Inconsolata", monospace; color: #2c2c54; font-weight: lighter;
 
 .btn-five { border: none; padding: 0; color: #ffffff; transition: 0s; -webkit-transition: 0s; -moz-transition: 0s; -ms-transition: 0s; -o-transition: 0s; }
 
-.btn-five:hover { color: #2c2c54; }
+.btn-five:hover { color: #5e5e5e; }
 
 /* contact */
 .contact .container { width: 90%; }
@@ -124,7 +118,7 @@ footer { padding: 48px 0; }
 
 footer ul { max-width: 320px; margin: 0 auto; }
 
-footer ul li { width: 60px; height: 60px; background-color: #ff5252; font-size: 0; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; position: relative; }
+footer ul li { width: 60px; height: 60px; background-color: #ffd904; font-size: 0; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; position: relative; }
 
 footer ul li i { z-index: 2; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 30px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); }
 

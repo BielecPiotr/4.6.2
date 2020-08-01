@@ -10,12 +10,12 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
-  font-family: "Inconsolata", monospace;
+  font-family: "Montserrat", monospace;
   color: #000000;
 }
 
 .splash {
-  background: #ffffff;
+  background-image: url(images/header.jpg);
   min-height: 500px;
   display: flex;
 }
@@ -33,13 +33,13 @@ section {
 .title {
   font-size: 48px;
   margin: 0 0 72px 0;
-  color: #2c2c54;
+  color: #5e5e5e;
 }
 
 .subtitle {
   font-size: 24px;
   margin: 0 0 12px 0;
-  color: #2c2c54;
+  color: #5e5e5e;
 }
 
 .wrapper {
@@ -62,7 +62,6 @@ section {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -70,26 +69,13 @@ section {
   -o-transition: all 1s;
   background-position: 100% 0;
   background-size: 300%;
-}
-
-.btn:hover {
-  background-position: 0 100%;
-  color: #000000;
-}
-
-.btn-one {
-  border-color: #000000;
-  color: #000000;
-  background-image: linear-gradient(90deg, #000000 50%, transparent 50%);
-}
-
-.btn-one:hover {
   color: #ffffff;
+  background-color: #ffd904;
 }
 
 p {
-  font-family: "Inconsolata", monospace;
-  color: #2c2c54;
+  font-family: "Montserrat", monospace;
+  color: #5e5e5e;
   font-weight: lighter;
   font-size: 14px;
 }
@@ -123,7 +109,7 @@ p {
 .navigation ul ul li {
   display: block;
   margin: 0 5px 12px 5px;
-  color: #2c2c54;
+  color: #5e5e5e;
 }
 
 .navigation li ul {
@@ -163,12 +149,12 @@ p {
   margin: 0;
   font-size: 72px;
   word-spacing: -24px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Montserrat", monospace;
   line-height: 1.2;
 }
 
 .page-title span {
-  font-family: "Signika", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -193,7 +179,7 @@ p {
   line-height: 1;
   color: #33d9b2;
   opacity: 0.3;
-  font-family: "Signika", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .inner p:first-of-type {
@@ -207,9 +193,9 @@ p {
 }
 
 .btn-three {
-  border-color: #ff5252;
-  color: #ff5252;
-  background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
+  border-color: #ffd904;
+  color: #ffd904;
+  background-image: linear-gradient(90deg, #ffd904 50%, transparent 50%);
 }
 
 .btn-four {
@@ -299,7 +285,7 @@ p {
 }
 
 .btn-five:hover {
-  color: #2c2c54;
+  color: #5e5e5e;
 }
 
 /* contact */
@@ -382,7 +368,7 @@ footer ul {
 footer ul li {
   width: 60px;
   height: 60px;
-  background-color: #ff5252;
+  background-color: #ffd904;
   font-size: 0;
   border-radius: 100%;
   -webkit-border-radius: 100%;

@@ -1,13 +1,13 @@
 /* variables */
 
-$font-main: "Inconsolata", monospace;
-$font-second: "Signika", sans-serif;
+$font-main: Montserrat;
+$font-second: Droid Serief;
+$font-third: Roboto; 
 
-$color-main: #ffffff;
-$color-second: #33d9b2;
-$color-third: #ff5252;
+$color-main: #f5f5f5;
+$color-second: #ffd904;
 $color-text-main: #000000;
-$color-text-second: #2c2c54;
+$color-text-second: #5e5e5e;
 
 $transition: all 1s;
 
@@ -28,7 +28,7 @@ body {
 }
 
 .splash {
-  background: $color-main;
+  background-image: url(images/header.jpg);
   min-height: 500px;
   display: flex;
 }
@@ -46,7 +46,7 @@ section {
 .title {
   font-size: 48px;
   margin: 0 0 72px 0;
-  color: $color-text-second;
+  color: $color-text-main;
 }
 
 .subtitle {
@@ -75,7 +75,6 @@ section {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid;
   transition: $transition;
   -webkit-transition: $transition;
   -moz-transition: $transition;
@@ -83,25 +82,8 @@ section {
   -o-transition: $transition;
   background-position: 100% 0;
   background-size: 300%;
-}
-
-.btn:hover {
-  background-position: 0 100%;
-  color: $color-text-main;
-}
-
-.btn-one {
-  border-color: $color-text-main;
-  color: $color-text-main;
-  background-image: linear-gradient(
-    90deg,
-    $color-text-main 50%,
-    transparent 50%
-  );
-}
-
-.btn-one:hover {
   color: $color-main;
+  background-color: $color-second;
 }
 
 p {

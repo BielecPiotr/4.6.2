@@ -10,7 +10,7 @@ body { margin: 0; font-size: 16px; line-height: 1.7; font-family: "Montserrat"; 
 
 section { padding: 96px 0; }
 
-.titlebox { text-align: center; margin: 0 0 50px 0; }
+.titlebox { text-align: center; margin: 0 0 100px 0; }
 
 .titlebox .title { font-size: 48px; margin: 0 auto; color: #000000; }
 
@@ -66,19 +66,9 @@ p { font-family: "Montserrat"; color: #5e5e5e; font-weight: lighter; font-size: 
 /* portfolio */
 .wrapper-box { -ms-flex: 0 0 50%; flex: 0 0 50%; padding: 30px; min-height: 300px; }
 
-.image { float: left; max-width: 45%; height: 100%; position: relative; }
-
-.image::after { position: absolute; content: ""; background-color: #ffd904; opacity: 0.3; width: 100%; height: 100%; left: 20px; top: 20px; }
-
-.image:hover:after { transform: translate(-20px, -20px); -webkit-transform: translate(-20px, -20px); -moz-transform: translate(-20px, -20px); -ms-transform: translate(-20px, -20px); -o-transform: translate(-20px, -20px); }
+.image { position: relative; }
 
 .image img { width: 100%; height: 100%; object-fit: cover; }
-
-.side { max-width: 55%; float: right; padding: 50px 0 0 50px; }
-
-.side p:last-of-type { font-weight: bolder; padding: 0; text-align: left; }
-
-.btn-five:hover { color: #5e5e5e; }
 
 /* footer */
 footer { padding: 48px 0; }

@@ -43,7 +43,7 @@ section {
 
 .titlebox {
   text-align: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 100px 0;
 
   .title {
     font-size: 48px;
@@ -247,54 +247,15 @@ p {
   }
   
   .image {
-    float: left;
-    max-width: 45%;
-    height: 100%;
     position: relative;
   }
-  
-  .image::after {
-    position: absolute;
-    content: "";
-    background-color: $color-second;
-    opacity: 0.3;
-    width: 100%;
-    height: 100%;
-    left: 20px;
-    top: 20px;
-  }
-  
-  .image:hover:after {
-    transform: translate(-20px, -20px);
-    -webkit-transform: translate(-20px, -20px);
-    -moz-transform: translate(-20px, -20px);
-    -ms-transform: translate(-20px, -20px);
-    -o-transform: translate(-20px, -20px);
-  }
-  
+
   .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .side {
-    max-width: 55%;
-    float: right;
-    padding: 50px 0 0 50px;
-  }
-  
-  .side p:last-of-type {
-    font-weight: bolder;
-    padding: 0;
-    text-align: left;
-  }
-  
-  .btn-five:hover {
-    color: $color-text-second;
-  }
-
-
   /* footer */
   
   footer {

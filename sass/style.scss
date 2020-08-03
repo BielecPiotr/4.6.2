@@ -1,8 +1,8 @@
 /* variables */
 
-$font-main: Montserrat;
-$font-second: Droid Serief;
-$font-third: Roboto; 
+$font-main: "Montserrat";
+$font-second: "Droid Serief";
+$font-third: "Roboto"; 
 
 $color-main: #f5f5f5;
 $color-second: #ffd904;
@@ -206,29 +206,10 @@ p {
     border-color: $color-second;
     color: $color-second;
     background-image: linear-gradient(90deg, $color-second 50%, transparent 50%);
-  }
-  
-  .btn-three {
-    border-color: $color-third;
-    color: $color-third;
-    background-image: linear-gradient(90deg, $color-third 50%, transparent 50%);
-  }
-  
-  .btn-four {
-    border-color: $color-main;
-    color: $color-main;
-    background-image: linear-gradient(90deg, $color-main 50%, transparent 50%);
-  }
-  
-  .btn-two,
-  .btn-three,
-  .btn-four {
     position: absolute;
-    bottom: 0;
-    left: 0;
   }
   
-  /* our work */
+  /* portfolio */
   
   .wrapper-box {
     flex: 0 0 50%;
@@ -304,85 +285,26 @@ p {
   .btn-five:hover {
     color: $color-text-second;
   }
-  
-  /* contact */
-  
-  .contact {
-    .container {
-      width: 90%;
-  
-      .title {
-        color: $color-text-main;
-      }
-  
-      form {
-        min-width: 500px;
-        flex: 2 0 0;
-        display: flex;
-        flex-flow: column;
-        padding: 0 96px 0 0;
-  
-        input,
-        textarea {
-          background: none;
-          border: none;
-          border-bottom: 4px solid $color-text-main;
-          color: $color-text-main;
-        }
-  
-        input {
-          height: 50px;
-        }
-  
-        textarea {
-          resize: vertical;
-        }
-  
-        button {
-          background-color: $color-main;
-        }
-      }
-  
-      .data {
-        flex: 1 0 0;
-  
-        .subtitle,
-        p {
-          color: $color-text-main;
-          line-height: 1;
-        }
-  
-        .subtitle {
-          font-size: 20px;
-        }
-      }
-    }
-  }
-  
-  ::-webkit-input-placeholder {
-    color: $color-text-main;
-  }
-  ::-moz-placeholder {
-    color: $color-text-main;
-  }
-  :-ms-input-placeholder {
-    color: $color-text-main;
-  }
-  :-moz-placeholder {
-    color: $color-text-main;
-  }
-  
+
+
   /* footer */
   
   footer {
     padding: 48px 0;
+
+    p{
+      padding: 20px;
+      position: absolute;
+    }
+
     ul {
-      max-width:320px;
+      max-width: 400px;
       margin: 0 auto;
+      
       li {
         width: 60px;
         height: 60px;
-        background-color: $color-third;
+        background-color: $color-text-second;
         font-size: 0;
         border-radius: 100%;
         -webkit-border-radius: 100%;
@@ -390,8 +312,10 @@ p {
         -ms-border-radius: 100%;
         -o-border-radius: 100%;
         position: relative;
+        
   
         i {
+          color: $color-main;
           z-index: 2;
           position: absolute;
           left: 50%;

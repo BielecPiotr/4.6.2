@@ -9,8 +9,6 @@ $color-second: #ffd904;
 $color-text-main: #000000;
 $color-text-second: #5e5e5e;
 
-$transition: all 1s;
-
 /* global */
 
 *,
@@ -43,17 +41,32 @@ section {
   padding: 96px 0;
 }
 
-.title {
-  font-size: 48px;
-  margin: 0 0 72px 0;
-  color: $color-text-main;
+.titlebox {
+  text-align: center;
+  margin: 0 0 50px 0;
+
+  .title {
+    font-size: 48px;
+    margin: 0 auto;
+    color: $color-text-main;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin: -20px 0 12px 0;
+    color: $color-text-second;
+    font-family: $font-second;
+    font-style: italic;
+  }
 }
 
 .subtitle {
-  font-size: 24px;
-  margin: 0 0 12px 0;
-  color: $color-text-second;
+  font-size: 18px;
+  margin: 12px 0;
+  text-align: center;
 }
+
+
 
 .wrapper {
   display: flex;
@@ -75,11 +88,6 @@ section {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: $transition;
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -ms-transition: $transition;
-  -o-transition: $transition;
   background-position: 100% 0;
   background-size: 300%;
   color: $color-main;
@@ -184,30 +192,51 @@ p {
   .inner {
     flex: 0 0 33.3333%;
     position: relative;
-    padding: 0 0 60px 40px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .digit {
-    position: absolute;
-    left: 0;
-    top: -45%;
-    font-size: 144px;
-    line-height: 1;
-    color: $color-second;
-    opacity: 0.3;
-    font-family: $font-second;
-  }
-  
-  .inner p:first-of-type {
-    font-weight: bolder;
+  .inner p {
+    font-family: $font-third;
+    font-size: 12px;
   }
   
   .btn-two {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     border-color: $color-second;
     color: $color-second;
     background-image: linear-gradient(90deg, $color-second 50%, transparent 50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+  margin: 0 auto;
+  padding: auto;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-size: 300%;
+  color: $color-main;
+  background-color: $color-second;
+  position: relative;
+
+  i {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
   }
+}
   
   /* portfolio */
   
@@ -233,11 +262,6 @@ p {
     height: 100%;
     left: 20px;
     top: 20px;
-    transition: $transition;
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    -o-transition: $transition;
   }
   
   .image:hover:after {
@@ -252,11 +276,6 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: $transition;
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    -o-transition: $transition;
   }
   
   .side {
@@ -269,17 +288,6 @@ p {
     font-weight: bolder;
     padding: 0;
     text-align: left;
-  }
-  
-  .btn-five {
-    border: none;
-    padding: 0;
-    color: $color-main;
-    transition: 0s;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    -ms-transition: 0s;
-    -o-transition: 0s;
   }
   
   .btn-five:hover {
@@ -300,7 +308,7 @@ p {
     ul {
       max-width: 400px;
       margin: 0 auto;
-      
+
       li {
         width: 60px;
         height: 60px;
@@ -358,7 +366,7 @@ p {
       margin: 0 12px 0 0;
     }
   
-    .contact .container form,
+    .container form,
     .data {
       min-width: 250px;
       margin: 48px auto;

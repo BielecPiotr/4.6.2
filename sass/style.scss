@@ -215,7 +215,7 @@ p {
     display: block;
   margin: 0 auto;
   padding: auto;
-  font-size: 16px;
+  font-size: 0;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -284,13 +284,12 @@ p {
         
   
         i {
-          color: $color-main;
           z-index: 2;
           position: absolute;
+          color: $color-main;
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          font-size: 30px;
           -webkit-transform: translate(-50%, -50%);
           -moz-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);

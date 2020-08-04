@@ -239,23 +239,60 @@ p {
 }
   
   /* portfolio */
+
+  .portfolio {
+    background-color: rgb(221, 221, 221);
+
+    .wrapper {
+      max-width: 850px;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      
+    }
+  }
   
   .wrapper-box {
-    flex: 0 0 50%;
-    padding: 30px;
+    flex: 0 0 33.333%;
+    padding: 15px;
     min-height: 300px;
   }
   
   .image {
     position: relative;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .hiddenbutton {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+
+    }
   }
 
-  .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   
+  .bottom {
+    text-align: center;
+    background-color: $color-main;
+    margin: 0;
+    padding: 20px 0;
+
+    h3, p {
+      margin: 0;
+    }
+  }
+
   /* footer */
   
   footer {
@@ -310,16 +347,12 @@ p {
   /* media */
   
   @media (max-width: 767px) {
-    .wrapper {
+    .services .wrapper {
       flex-direction: column;
     }
-  
-    .image,
-    .side {
-      max-width: 100%;
-      height: 150px;
-      float: none;
-      margin: 50px auto;
+
+    .wrapper-box {
+      flex: 0 0 50%;
     }
   
     .navigation li {

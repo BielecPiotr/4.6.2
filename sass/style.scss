@@ -4,7 +4,7 @@ $font-main: "Montserrat";
 $font-second: "Droid Serief";
 $font-third: "Roboto"; 
 
-$color-main: #f5f5f5;
+$color-main: #ffffff;
 $color-second: #ffd904;
 $color-text-main: #000000;
 $color-text-second: #5e5e5e;
@@ -98,8 +98,26 @@ p {
 /* navigation */
 
 .navigation {
-    background: $color-main;
     padding: 12px 0;
+
+
+    .container  {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .golden {
+        margin: 0 auto;
+        color: $color-second;
+        font-size: 25px;
+        font-weight: bolder;
+        font-style: italic;
+        font-family: 'Grand Hotel';
+        letter-spacing: 3px;
+        text-decoration: none;
+      }
+    }
 
     ul {
       padding: 0;
@@ -110,7 +128,6 @@ p {
     li {
       display: inline-block;
       position: relative;
-      margin: 0 36px 0 0;
 
       ul {
         display: none;
@@ -121,24 +138,20 @@ p {
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
+        justify-content: flex-end;
       }
     } 
 
-    li:hover ul {
-      display: block;
-      position: absolute;
-      background: $color-text-main;
-    }
 
-    li ul li a {
-      color: $color-main;
+    li a {
+      color: $color-text-main;
       display: block;
       padding: 0 24px;
+      text-decoration: none;
+      color: $color-main;
+      text-transform: uppercase;
     }
 
-    a {
-      text-decoration: none;
-    }
 
     a:hover {
       color: $color-second;
@@ -158,9 +171,18 @@ p {
   /* Header */
 
   .splash {
-    background-image: url(images/header.jpg);
-    min-height: 500px;
+    background-image: url("images/header.jpg");
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+
+    .background {
+      z-index: -2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   
   .splash-inner {
@@ -171,11 +193,12 @@ p {
   
   .page-title {
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 30px;
     font-style: italic;
     font-weight: lighter;
     font-family: $font-main;
     line-height: 1.2;
+    color: $color-main;
   
     span {
       font-family: $font-second;
@@ -189,6 +212,7 @@ p {
     font-weight: lighter;
     font-weight: bold;
     text-transform: uppercase;
+    color: $color-main;
   }
  
   /* services */
